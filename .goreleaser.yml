@@ -30,6 +30,7 @@ brews:
   - repository:
       owner: sxlgg
       name: homebrew-sqlook
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     homepage: "https://github.com/sxlgg/sqlook"
     description: "Minimal SQLite database explorer"
     license: "MIT"
@@ -40,6 +41,7 @@ scoops:
   - repository:
       owner: sxlgg
       name: scoop-sqlook
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     homepage: "https://github.com/sxlgg/sqlook"
     description: "Minimal SQLite database explorer"
     license: "MIT"
