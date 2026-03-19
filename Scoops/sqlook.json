@@ -1,0 +1,22 @@
+{
+    "version": "0.1.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/sxlgg/sqlook/releases/download/v0.1.0/sqlook_windows_amd64.zip",
+            "bin": [
+                "sqlook.exe"
+            ],
+            "hash": "51cccd19c79bf70686f2b15d628d45ccd2d101554ba1d0da1c826bdc2b432936"
+        },
+        "arm64": {
+            "url": "https://github.com/sxlgg/sqlook/releases/download/v0.1.0/sqlook_windows_arm64.zip",
+            "bin": [
+                "sqlook.exe"
+            ],
+            "hash": "c7bd7e396cef9508349a6894a7f631ec001082ed7030e65be6a9505abadfdb1c"
+        }
+    },
+    "homepage": "https://github.com/sxlgg/sqlook",
+    "license": "MIT",
+    "description": "Minimal SQLite database explorer"
+}
