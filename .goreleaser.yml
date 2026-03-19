@@ -29,22 +29,22 @@ archives:
 brews:
   - repository:
       owner: sxlgg
-      name: homebrew-sqlook
-      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+      name: sqlook
     homepage: "https://github.com/sxlgg/sqlook"
     description: "Minimal SQLite database explorer"
     license: "MIT"
+    directory: Formula
     install: |
       bin.install "sqlook"
 
 scoops:
   - repository:
       owner: sxlgg
-      name: scoop-sqlook
-      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
+      name: sqlook
     homepage: "https://github.com/sxlgg/sqlook"
     description: "Minimal SQLite database explorer"
     license: "MIT"
+    directory: Scoops
 
 changelog:
   sort: asc

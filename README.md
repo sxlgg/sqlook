@@ -16,7 +16,8 @@ A minimal SQLite database explorer. Point it at a `.db` file and browse your dat
 ### Homebrew (macOS / Linux)
 
 ```bash
-brew install sxlgg/sqlook/sqlook
+brew tap sxlgg/sqlook
+brew install sqlook
 ```
 
 ### Go
@@ -34,7 +35,7 @@ curl -sfL https://raw.githubusercontent.com/sxlgg/sqlook/main/install.sh | sh
 ### Scoop (Windows)
 
 ```powershell
-scoop bucket add sqlook https://github.com/sxlgg/scoop-sqlook
+scoop bucket add sqlook https://github.com/sxlgg/sqlook
 scoop install sqlook
 ```
 
