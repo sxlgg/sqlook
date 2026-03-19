@@ -1,0 +1,52 @@
+version: 2
+
+project_name: sqlook
+
+builds:
+  - main: ./cmd/sqlook
+    binary: sqlook
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -s -w
+
+archives:
+  - formats:
+      - tar.gz
+    format_overrides:
+      - goos: windows
+        formats:
+          - zip
+    name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}"
+
+brews:
+  - repository:
+      owner: sxlgg
+      name: homebrew-sqlook
+    homepage: "https://github.com/sxlgg/sqlook"
+    description: "Minimal SQLite database explorer"
+    license: "MIT"
+    install: |
+      bin.install "sqlook"
+
+scoops:
+  - repository:
+      owner: sxlgg
+      name: scoop-sqlook
+    homepage: "https://github.com/sxlgg/sqlook"
+    description: "Minimal SQLite database explorer"
+    license: "MIT"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^docs:"
+      - "^test:"
