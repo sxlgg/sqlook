@@ -31,7 +31,7 @@ brews:
       owner: sxlgg
       name: sqlook
     homepage: "https://github.com/sxlgg/sqlook"
-    description: "Minimal SQLite database explorer"
+    description: "Minimal SQLite and Postgres database explorer"
     license: "MIT"
     directory: Formula
     install: |
@@ -42,7 +42,7 @@ scoops:
       owner: sxlgg
       name: sqlook
     homepage: "https://github.com/sxlgg/sqlook"
-    description: "Minimal SQLite database explorer"
+    description: "Minimal SQLite and Postgres database explorer"
     license: "MIT"
     directory: Scoops
 
