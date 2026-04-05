@@ -5,21 +5,21 @@
 class Sqlook < Formula
   desc "Minimal SQLite database explorer"
   homepage "https://github.com/sxlgg/sqlook"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sxlgg/sqlook/releases/download/v0.1.0/sqlook_darwin_amd64.tar.gz"
-      sha256 "72c28d5dd294c86722bb0144269e7b5db747171415de537031c3e260bbef731f"
+      url "https://github.com/sxlgg/sqlook/releases/download/v0.2.0/sqlook_darwin_amd64.tar.gz"
+      sha256 "26a68197e5aefb20209d08bc30690c32790b6acc6ef1487f2c0b79db34ac5b2e"
 
       define_method(:install) do
         bin.install "sqlook"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sxlgg/sqlook/releases/download/v0.1.0/sqlook_darwin_arm64.tar.gz"
-      sha256 "b62d79390275ee5f2f6a18023369f453311e1733afb1993e4a20fb7f1b60e894"
+      url "https://github.com/sxlgg/sqlook/releases/download/v0.2.0/sqlook_darwin_arm64.tar.gz"
+      sha256 "caee5496216ffe48b2dec7b762ba757e91c64a25b280b4b398825e673cc08266"
 
       define_method(:install) do
         bin.install "sqlook"
@@ -29,15 +29,15 @@ class Sqlook < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sxlgg/sqlook/releases/download/v0.1.0/sqlook_linux_amd64.tar.gz"
-      sha256 "3a7ad37f3810562aa28b83a1732b5199c5a0834e2090a6593de3be738d15c838"
+      url "https://github.com/sxlgg/sqlook/releases/download/v0.2.0/sqlook_linux_amd64.tar.gz"
+      sha256 "15b955844f254aa6830cf6be9cf2c1920e347e60baa22ae29b3a65c864a31d2f"
       define_method(:install) do
         bin.install "sqlook"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sxlgg/sqlook/releases/download/v0.1.0/sqlook_linux_arm64.tar.gz"
-      sha256 "38c0886d2aeaf9c97296823e6c5fe803ef76e2e7caef315b2161d744693aef9d"
+      url "https://github.com/sxlgg/sqlook/releases/download/v0.2.0/sqlook_linux_arm64.tar.gz"
+      sha256 "72c2b596313d6c7391a58082c7664a82cb7df66b61d17966a5e991441223db55"
       define_method(:install) do
         bin.install "sqlook"
       end
