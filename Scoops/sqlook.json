@@ -1,19 +1,19 @@
 {
-    "version": "0.1.0",
+    "version": "0.2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/sxlgg/sqlook/releases/download/v0.1.0/sqlook_windows_amd64.zip",
+            "url": "https://github.com/sxlgg/sqlook/releases/download/v0.2.0/sqlook_windows_amd64.zip",
             "bin": [
                 "sqlook.exe"
             ],
-            "hash": "51cccd19c79bf70686f2b15d628d45ccd2d101554ba1d0da1c826bdc2b432936"
+            "hash": "ee7ce0d9b0e14ba99aa0bef9c4952eb929c41a149735e8beb3e8738bd6823dad"
         },
         "arm64": {
-            "url": "https://github.com/sxlgg/sqlook/releases/download/v0.1.0/sqlook_windows_arm64.zip",
+            "url": "https://github.com/sxlgg/sqlook/releases/download/v0.2.0/sqlook_windows_arm64.zip",
             "bin": [
                 "sqlook.exe"
             ],
-            "hash": "c7bd7e396cef9508349a6894a7f631ec001082ed7030e65be6a9505abadfdb1c"
+            "hash": "d994473f8c396e50d2db059b596856b63effe5be61d4ec6d739e417ac730bb67"
         }
     },
     "homepage": "https://github.com/sxlgg/sqlook",
